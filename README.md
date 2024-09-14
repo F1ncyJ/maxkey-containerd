@@ -115,9 +115,6 @@ containerd_nerdctl_uninstall.sh
 ## 问题记录
 
 ### 安装nerdctl工具环境
-
-参考：[git仓库脚本地址](https://git.cai-inc.com/rdc/infra/Infrastructure/idaas/IDaaS-MaxKey/-/blob/zcy/4.1.1/docker2containerd/containerd_nerdctl_install.sh)
-
 安装过程有几个要点：
 
 - 下载github-release包，必须是full版本；解压到自定义目录/opt/nerdctl

@@ -3,7 +3,7 @@
 #####################
 ### 卸载 nerdctl
 ### 2024年08月29日
-### 太一
+### FancyJ
 #####################
 
 # 停止服务
@@ -14,4 +14,4 @@ rm buildkit.service
 # 清除环境变量
 {
 	echo ""
-} >/etc/profile.d/nerdctl_profile
+} >/etc/profile.d/nerdctl_profile.sh

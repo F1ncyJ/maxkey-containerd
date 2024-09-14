@@ -3,7 +3,7 @@
 #####################
 ### 安装 nerdctl
 ### 2024年08月29日
-### 太一
+### FancyJ
 #####################
 
 # see https://github.com/containerd/nerdctl/releases for the latest release
@@ -27,7 +27,7 @@ rm -rf ${SAVE_DIR:?}/*
 tar -xzvf ${DOWN_DIR}/nerdctl.tar.gz -C ${SAVE_DIR}
 
 # 添加环境变量(root权限)
-cat >/etc/profile.d/nerdctl_profile <<EOF
+cat >/etc/profile.d/nerdctl_profile.sh <<EOF
 # 开启系统代理
 ## nerdctl ##
 # path
@@ -35,7 +35,7 @@ export PATH="\${PATH}:${SAVE_DIR}/bin/"
 # cni
 export CNI_PATH="${SAVE_DIR}/libexec/cni"
 EOF
-source /etc/profile.d/nerdctl_profile
+source /etc/profile.d/nerdctl_profile.sh
 
 # 软路由启动服务
 cd /lib/systemd/system/ || exit
